@@ -11,7 +11,7 @@ export class Socket extends EventEmitter {
 	private _disconnected: boolean = true;
 	private _id?: string;
 	private _messagesQueue: Array<object> = [];
-	private _socket?: WebSocket;
+	public _socket?: WebSocket;
 	private _wsPingTimer?: any;
 	private readonly _baseUrl: string;
 
